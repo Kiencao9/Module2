@@ -8,7 +8,10 @@ public class ManagerHuman {
     Scanner scanner = new Scanner(System.in);
 
     public void displayHuman() {
-        System.out.println(humans);
+        for (Human h : humans) {
+            System.out.println(h);
+        }
+
     }
 
     public void addHuman() {
