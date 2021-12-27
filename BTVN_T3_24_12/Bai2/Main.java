@@ -1,5 +1,6 @@
 package BTVN_T3_24_12.Bai2;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -25,6 +26,15 @@ public class Main {
                 case 1:
                     fruitManager.displayAll();
                     break;
+                case 2:
+                    fruitManager.displayApple();
+                    break;
+                case 3:
+                    fruitManager.displayBanana();
+                case 4:
+                    fruitManager.displayLemon();
+                    break;
+
                 case 7:
                     int choice1;
                     do {
@@ -50,6 +60,7 @@ public class Main {
                                 break;
                         }
                     } while (choice1 != 0);
+
             }
         } while (choice != 0);
     }

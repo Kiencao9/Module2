@@ -15,6 +15,9 @@ public class Main {
             System.out.println("3. Xóa Laptop");
             System.out.println("4. Hiển thị tất cả Laptop");
             System.out.println("5. Hiển thị sản phẩm theo hãng");
+            System.out.println("6. Tìm kiếm sản phẩm trong khoảng giá");
+            System.out.println("7. Tìm kiếm sản phẩm theo tên hãng");
+            System.out.println("8. Tìm kiếm sản phẩm theo màu");
             choice = scanner.nextInt();
 
             switch (choice) {

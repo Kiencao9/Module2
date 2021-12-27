@@ -1,5 +1,7 @@
 package BTVN_T3_24_12.Bai1;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -95,5 +97,9 @@ public class LaptopManager {
                 System.out.println(laptops.get(i));
             }
         }
+    }
+
+    public void readFile() {
+
     }
 }

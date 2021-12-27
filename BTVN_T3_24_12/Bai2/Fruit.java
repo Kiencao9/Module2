@@ -1,6 +1,7 @@
 package BTVN_T3_24_12.Bai2;
 
 public class Fruit {
+    private String name;
     private double weight;
     private String taste;
     private String color;
@@ -9,11 +10,20 @@ public class Fruit {
     public Fruit() {
     }
 
-    public Fruit(double weight, String taste, String color, double price) {
+    public Fruit(String name, double weight, String taste, String color, double price) {
+        this.name = name;
         this.weight = weight;
         this.taste = taste;
         this.color = color;
         this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getWeight() {
@@ -50,11 +60,12 @@ public class Fruit {
 
     @Override
     public String toString() {
-        return "Fruit" +
-                "cannang: " + weight +
-                ", vi:'" + taste + '\'' +
-                ", color:'" + color + '\'' +
-                ", price:" + price +
+        return "Fruit{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", taste='" + taste + '\'' +
+                ", color='" + color + '\'' +
+                ", price=" + price +
                 '}';
     }
 }

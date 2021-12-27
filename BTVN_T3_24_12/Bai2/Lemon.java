@@ -4,8 +4,8 @@ public class Lemon extends Fruit{
     public Lemon() {
     }
 
-    public Lemon(double weight, String taste, String color, double price) {
-        super(weight, taste, color, price);
+    public Lemon(String name, double weight, String taste, String color, double price) {
+        super(name, weight, taste, color, price);
     }
 
     @Override
