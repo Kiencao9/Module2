@@ -1,5 +1,6 @@
 package MinitestT4;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +18,9 @@ public class Main {
             System.out.println("5. Danh sách sinh viên theo điểm trung bình giảm dần");
             System.out.println("6. Danh sách sinh viên theo điểm trung bình tăng dần");
             System.out.println("7. Sinh viên có diểm trung bình cao nhất");
-            System.out.println("9. Hiển thị tất cả sinh viên");
+            System.out.println("8. Ghi File");
+            System.out.println("9. Đọc File");
+            System.out.println("10. Hiển thị tất cả sinh viên");
             System.out.println("0. Quay lại MENU");
             System.out.println("Mời nhập lựa chọn: ");
             choice = scanner.nextInt();
@@ -53,9 +56,13 @@ public class Main {
                     studentManager.displayMaxPoint();
                     break;
                 case 8:
-                    studentManager.writeToFile();
-
+                    studentManager.writeToFile(studentManager.students, StudentManager.PATH_NAME);
+                    break;
                 case 9:
+                    ArrayList<Student> students = studentManager.readFile(StudentManager.PATH_NAME);
+                    students.forEach(System.out::println);
+                    break;
+                case 10:
                     studentManager.displayAll();
                     break;
             }

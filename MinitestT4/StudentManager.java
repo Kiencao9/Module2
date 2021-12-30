@@ -1,15 +1,11 @@
 package MinitestT4;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.sql.Struct;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StudentManager {
-    public static final String PATH_NAME = "src/MinitestT4/student.txt";
+    public static final String PATH_NAME = "src/MinitestT4/student.csv";
     ArrayList<Student> students = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
@@ -123,7 +119,7 @@ public class StudentManager {
 
     public void writeToFile(ArrayList<Student> students,String path) {
         try {
-            BufferedWriter bufferedWriter = new BufferedReader(new FileWriter(path));
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path));
             for (Student student : students) {
                 bufferedWriter.write(student.toString());
             }
